@@ -2,15 +2,74 @@ h1 {
     font-style: bold;
     font-family: sans-serif;
     font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
 }
 
 body {
     font-family: sans-serif;
+    background-image: url("assets/HelloKittyWallpaper.jpg");
 }
 
-img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+footer {
+    text-align: left;
+    font-style:italic;
+    border: dashed 1px black;
+    border-radius: 10%;
+    background-color: plum;
+    padding: 1%;
 }
 
+.child {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    margin: 25px;
+    outline: dashed 1px black;
+    display: flex;
+    justify-content: center;
+    border-radius: 10%;
+}
+
+.one {
+    background-color: plum;
+}
+
+.two {
+    background-color: plum;
+}
+
+.with-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.sidebar {
+    flex-basis: 20rem;
+    flex-grow: 1;
+    background-color: plum;
+    border: dashed 1px black;
+    border-radius: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: 50%;
+  }
+  
+.content {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-width: 50%;
+  }
